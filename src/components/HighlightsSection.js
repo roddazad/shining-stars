@@ -39,7 +39,7 @@ export default function HighlightsSection() {
         quote: "My daughter loves the play areas! There's always something new to explore and learn.",
         author: "Michael T., Parent"
       },
-      image: "/play-spaces.png"
+      image: "/play-place.png"
     },
     {
       title: "Wholesome Nutrition",
@@ -90,7 +90,7 @@ export default function HighlightsSection() {
         quote: "I'm amazed at how much my child has learned! The curriculum is perfect for their age.",
         author: "Emma W., Parent"
       },
-      image: "/learning.png"
+      image: "/early-learning.png"
     },
     {
       title: "Family Communication",
@@ -107,7 +107,7 @@ export default function HighlightsSection() {
         quote: "I love getting updates about my child's day. The communication is excellent!",
         author: "James P., Parent"
       },
-      image: "/communication.png"
+      image: "/family-com.png"
     }
   ];
 
