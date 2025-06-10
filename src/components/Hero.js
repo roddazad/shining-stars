@@ -21,8 +21,7 @@ export default function Hero() {
   <div className="absolute inset-0 bg-[#cceeff]/85 z-20"></div>
 
   {/*  Hero Content */}
-  <div className="relative z-30 flex flex-col-reverse md:flex-row items-center justify-between w-full">
-    
+  <div className="relative z-30 flex flex-col md:flex-row items-center justify-center w-full gap-8">
     
     {/* Left Text Content */}
     <motion.div
@@ -56,62 +55,63 @@ export default function Hero() {
           Book a Tour
         </Link>
         <Link
-          href="/about-daycare"
+          href="/enrollment"
           className="bg-white text-green-700 border border-green-500 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition"
         >
-          Explore Programs
+          Get Started
         </Link>
       </motion.div>
     </motion.div>
-    {/* Hero Logo & Highlights */}
-<motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.9, duration: 0.6 }}
-  className="mt-10 flex flex-col items-center space-y-4"
->
-  {/*  Placeholder Logo */}
-  <motion.img
-    src="/logo.png" // Replace with your actual logo file name
-    alt="Shining Stars Daycare logo"
-    className="w-50 h-50 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-white"
-    initial={{ opacity: 0, scale: 0.8 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ delay: 1.0, duration: 0.6 }}
-  />
 
-  {/*  Highlight Lines */}
-  <div className="text-center space-y-2 text-base text-[#2b2b2b] font-bold">
-    <motion.p
-      initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 1.1, duration: 0.4 }}
+    {/* Hero Logo & Highlights */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.9, duration: 0.6 }}
+      className="flex flex-col items-center justify-center space-y-4 w-full md:w-auto"
     >
-     🌟 Caring, certified staff who treat your child like family 
-    </motion.p>
-    <motion.p
-      initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 1.3, duration: 0.4 }}
-    >
-      🌟 Engaging activities that spark imagination & learning 
-    </motion.p>
-    <motion.p
-      initial={{ opacity: 0, x: -20 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 1.5, duration: 0.4 }}
-    >
-      🌟 A safe, joyful space where every child shines 
-    </motion.p>
-  </div>
-</motion.div>
+      {/*  Placeholder Logo */}
+      <motion.img
+        src="/logo.png"
+        alt="Shining Stars Daycare logo"
+        className="w-40 h-40 md:w-60 md:h-60 rounded-full object-cover shadow-lg border-4 border-white"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 1.0, duration: 0.6 }}
+      />
+
+      {/*  Highlight Lines */}
+      <div className="text-center space-y-2 text-base text-[#2b2b2b] font-bold max-w-md">
+        <motion.p
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.1, duration: 0.4 }}
+        >
+          🌟 Caring, certified staff who treat your child like family 
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.3, duration: 0.4 }}
+        >
+          🌟 Engaging activities that spark imagination & learning 
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.5, duration: 0.4 }}
+        >
+          🌟 A safe, joyful space where every child shines 
+        </motion.p>
+      </div>
+    </motion.div>
 
     {/* Right: Hero Image */}
     <motion.div
       initial={{ scale: 0.8, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.8 }}
-      className="mb-10 md:mb-0 max-w-[600px]"
+      className="hidden md:block max-w-[600px]"
     >
       <Image
         src="/hero.png"
