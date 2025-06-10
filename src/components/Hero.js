@@ -87,21 +87,21 @@ export default function Hero() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1.1, duration: 0.4 }}
     >
-     🌟 Caring, certified staff who treat your child like family 🌟
+     🌟 Caring, certified staff who treat your child like family 
     </motion.p>
     <motion.p
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1.3, duration: 0.4 }}
     >
-      🌟 Engaging activities that spark imagination & learning 🌟
+      🌟 Engaging activities that spark imagination & learning 
     </motion.p>
     <motion.p
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 1.5, duration: 0.4 }}
     >
-      🌟 A safe, joyful space where every child shines 🌟
+      🌟 A safe, joyful space where every child shines 
     </motion.p>
   </div>
 </motion.div>
@@ -118,7 +118,7 @@ export default function Hero() {
         alt="Children playing"
         width={600}
         height={600}
-        className="rounded-xl shadow-lg w-[600px] h-[600px] object-cover"
+        className="rounded-xl shadow-lg w-[450px] h-[450px] object-cover"
       />
     </motion.div>
   </div>
