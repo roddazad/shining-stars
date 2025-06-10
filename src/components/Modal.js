@@ -97,10 +97,7 @@ export default function Modal({ isOpen, onClose, content }) {
               <div className="p-6 border-t border-gray-100 bg-gray-50">
                 <div className="flex flex-wrap gap-3">
                   <button
-                    onClick={() => {
-                      setIsTourModalOpen(true);
-                      onClose();
-                    }}
+                    onClick={() => setIsTourModalOpen(true)}
                     className="flex-1 bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition text-center"
                   >
                     Book a Tour
