@@ -1,0 +1,58 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+
+export default function GetStartedSection() {
+  return (
+    <section className="bg-[#fffaf4] py-20 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        {/* Left Image or Handbook Placeholder */}
+        <div className="relative w-full md:w-1/2">
+          <div 
+        //   className="absolute -top-10 -left-10 w-72 h-72 bg-pink-200 rounded-full z-0"
+           />
+           
+   <Link href="/handbook.pdf" target="_blank" rel="noopener noreferrer">
+  <Image
+    src="/Handbook.png"
+    alt="Parent Handbook Preview"
+    width={500}
+    height={500}
+    className="relative z-10 rounded-xl shadow-md object-cover w-full"
+  />
+</Link>
+        </div>
+
+        {/* Right Content */}
+        <div className="w-full md:w-1/2 space-y-6 text-[#2b2b2b]">
+          <h2 className="text-4xl font-heading text-pink-600">
+            Let’s Get Started Together
+          </h2>
+          <p>
+            Explore our warm, nurturing environment, meet our team, and discover how Shining Stars supports every child’s journey.
+          </p>
+          <p>
+            Download our Parent Handbook or schedule a visit — we’d love to meet you!
+          </p>
+
+          <div className="flex flex-wrap gap-4 mt-4">
+            <a
+              href="/handbook.pdf"
+              className="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition"
+              download
+            >
+              Download Handbook
+            </a>
+            <Link
+              href="/contact"
+              className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
+            >
+              Book a Tour
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

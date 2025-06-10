@@ -56,7 +56,7 @@ export default function WhatWeDo() {
             </Link>
             <Link
                 href="/contact"
-                className="bg-pink-600 text-white px-6 py-4 rounded-full font-semibold hover:bg-pink-700 transition"
+                className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
             >
                 Join Us
             </Link>
