@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 import { Nunito, Baloo_2 } from "next/font/google";
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body className="pt-16 font-sans bg-[#fff4eb] text-[#2b2b2b]">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
