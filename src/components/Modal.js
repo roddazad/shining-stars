@@ -38,7 +38,7 @@ export default function Modal({ isOpen, onClose, content }) {
             </div>
 
             {/* Right Column - Content */}
-            <div className="w-full md:w-1/2 flex flex-col max-h-[90vh]">
+            <div className="w-full md:w-1/2 flex flex-col h-[90vh] md:h-auto">
               {/* Header */}
               <div className="p-6 border-b border-gray-100 flex-shrink-0">
                 <div className="flex justify-between items-start">
@@ -55,8 +55,8 @@ export default function Modal({ isOpen, onClose, content }) {
                 </div>
               </div>
 
-              {/* Main Content */}
-              <div className="flex-1 p-6 space-y-6 overflow-y-auto">
+              {/* Main Content - Make this section scrollable */}
+              <div className="flex-1 overflow-y-auto p-6 space-y-6">
                 {/* Description */}
                 <div className="space-y-4">
                   <p className="text-gray-700 leading-relaxed">{content.description}</p>
