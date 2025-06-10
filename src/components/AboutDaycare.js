@@ -169,11 +169,36 @@ const AboutDaycare = () => {
             ))}
           </div>
 
-          {/* Call to Action */}
+          {/* Handbook Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl font-heading text-green-700 mb-4">Our Parent Handbook</h2>
+            <p className="text-[#2b2b2b] text-lg mb-6">
+              Download our comprehensive parent handbook to learn more about our policies, procedures, and daily routines.
+            </p>
+            <a
+              href="/handbook.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              View Handbook
+            </a>
+          </motion.div>
+
+          {/* Call to Action */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
             viewport={{ once: true }}
             className="mt-16 text-center"
           >
