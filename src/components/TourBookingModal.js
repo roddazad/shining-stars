@@ -38,10 +38,10 @@ export default function TourBookingModal({ isOpen, onClose }) {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 50, opacity: 0 }}
-            className="bg-white w-full max-w-4xl h-[80vh] rounded-2xl shadow-2xl overflow-hidden relative"
+            className="bg-white w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl overflow-hidden relative flex flex-col"
           >
             {/* Header */}
-            <div className="p-6 border-b border-gray-200">
+            <div className="p-6 border-b border-gray-200 flex-shrink-0">
               <div className="flex justify-between items-center">
                 <h2 className="text-2xl font-bold text-gray-900">Schedule a Tour</h2>
                 <button
@@ -58,7 +58,7 @@ export default function TourBookingModal({ isOpen, onClose }) {
             </div>
 
             {/* Calendly Container */}
-            <div className="h-[calc(80vh-120px)] relative">
+            <div className="flex-1 min-h-0 relative">
               {!isCalendlyLoaded && (
                 <div className="absolute inset-0 flex items-center justify-center bg-white">
                   <div className="text-center">
@@ -71,7 +71,7 @@ export default function TourBookingModal({ isOpen, onClose }) {
             </div>
 
             {/* Footer */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200">
+            <div className="p-4 bg-white border-t border-gray-200 flex-shrink-0">
               <p className="text-sm text-gray-600 text-center">
                 Need help scheduling? Contact us at{' '}
                 <a href="mailto:Roshanak87.davoodi@gmail.com" className="text-green-600 hover:text-green-700">

@@ -22,14 +22,14 @@ export default function Modal({ isOpen, onClose, content }) {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 50, opacity: 0 }}
-            className="bg-white w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden relative flex flex-col md:flex-row"
+            className="bg-white w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl overflow-hidden relative flex flex-col md:flex-row"
           >
             {/* Left Column - Image and Quick Info */}
-            <div className="w-full md:w-1/2 relative">
+            <div className="w-full md:w-1/2 relative flex-shrink-0">
               <img
                 src={content.image}
                 alt={content.title}
-                className="w-full h-64 md:h-full object-cover"
+                className="w-full h-48 md:h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:hidden" />
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white md:hidden">
@@ -38,9 +38,9 @@ export default function Modal({ isOpen, onClose, content }) {
             </div>
 
             {/* Right Column - Content */}
-            <div className="w-full md:w-1/2 flex flex-col">
+            <div className="w-full md:w-1/2 flex flex-col max-h-[90vh]">
               {/* Header */}
-              <div className="p-6 border-b border-gray-100">
+              <div className="p-6 border-b border-gray-100 flex-shrink-0">
                 <div className="flex justify-between items-start">
                   <div className="hidden md:block">
                     <h3 className="text-2xl font-bold font-heading text-gray-900">{content.title}</h3>
@@ -94,7 +94,7 @@ export default function Modal({ isOpen, onClose, content }) {
               </div>
 
               {/* Footer - Action Buttons */}
-              <div className="p-6 border-t border-gray-100 bg-gray-50">
+              <div className="p-6 border-t border-gray-100 bg-gray-50 flex-shrink-0">
                 <div className="flex flex-wrap gap-3">
                   <button
                     onClick={() => setIsTourModalOpen(true)}
