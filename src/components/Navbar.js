@@ -7,11 +7,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'About Us', href: '/about' },
     { name: 'Our Daycare', href: '/about-daycare' },
+    { name: 'About Us', href: '/about' },
     { name: 'Enrollment & FAQs', href: '/enrollment' },
-    { name: 'Gallery', href: '/gallery' },
     { name: 'Book a Tour', href: '/book-a-tour' },
+    { name: 'Gallery', href: '/gallery' },
   ];
 
   return (

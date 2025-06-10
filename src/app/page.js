@@ -12,8 +12,9 @@ export default function Home() {
       <Hero />
       <HighlightsSection />
       <WhatWeDo />
-      <Testimonials />
+     
       <GetStartedSection />
+      <Testimonials />
     </>
   );
 }
