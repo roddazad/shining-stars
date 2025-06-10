@@ -64,8 +64,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-[#2b2b2b] hover:text-green-600 transition-colors">
-                  Our Programs
+                <Link href="/about-daycare" className="text-[#2b2b2b] hover:text-green-600 transition-colors">
+                  Our Daycare
                 </Link>
               </li>
               <li>
@@ -116,7 +116,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Shining Stars Daycare. All rights reserved.
           </p>
           <p className="text-sm mt-2 text-[#2b2b2b]">
-            Designed with <span className="text-pink-500">❤️</span> for your little stars by <a href="https://code-nest.dev" className="text-green-600 hover:text-green-700 transition-colors">CodeNest</a>
+            Designed with <span className="text-pink-500">Love</span> for your little stars by <a href="https://code-nest.dev" className="text-green-600 hover:text-green-700 transition-colors">CodeNest</a>
           </p>
         </div>
       </div>
