@@ -3,9 +3,11 @@
 import { useState } from 'react';
 import ApplicationForm from '@/components/ApplicationForm';
 import FAQ from '@/components/FAQ';
+import TourBookingModal from '@/components/TourBookingModal';
 
 export default function EnrollmentPage() {
   const [isApplicationFormOpen, setIsApplicationFormOpen] = useState(false);
+  const [isTourModalOpen, setIsTourModalOpen] = useState(false);
 
   return (
     <main className="min-h-screen bg-white">
@@ -41,7 +43,13 @@ export default function EnrollmentPage() {
             <div className="text-center p-6 bg-green-50 rounded-xl">
               <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
               <h3 className="text-xl font-semibold mb-3">Schedule Tour</h3>
-              <p className="text-gray-600">Visit our facility to see our programs in action and meet our staff.</p>
+              <p className="text-gray-600 mb-4">Visit our facility to see our programs in action and meet our staff.</p>
+              <button
+                onClick={() => setIsTourModalOpen(true)}
+                className="bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-700 transition"
+              >
+                Book Your Tour
+              </button>
             </div>
             <div className="text-center p-6 bg-green-50 rounded-xl">
               <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
@@ -59,6 +67,12 @@ export default function EnrollmentPage() {
       <ApplicationForm
         isOpen={isApplicationFormOpen}
         onClose={() => setIsApplicationFormOpen(false)}
+      />
+
+      {/* Tour Booking Modal */}
+      <TourBookingModal
+        isOpen={isTourModalOpen}
+        onClose={() => setIsTourModalOpen(false)}
       />
     </main>
   );

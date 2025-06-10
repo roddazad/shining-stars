@@ -49,13 +49,13 @@ export default function WhatWeDo() {
           </p>
          <div className="flex flex-wrap gap-4 mt-4">
             <Link
-                href="/about-daycare"
+                href="/about"
                 className="bg-pink-600 text-white px-6 py-4 rounded-full font-semibold hover:bg-pink-700 transition"
             >
                 Learn More
             </Link>
             <Link
-                href="/contact"
+                href="/enrollment"
                 className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
             >
                 Join Us
