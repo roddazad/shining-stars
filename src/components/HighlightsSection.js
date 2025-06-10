@@ -12,6 +12,17 @@ export default function HighlightsSection() {
       text: "Our teachers aren't just certified — they're passionate, nurturing, and treat every child like their own.",
       bg: "bg-[#FDE68A]",
       description: "At Shining Stars, we believe that every child deserves warmth, consistency, and emotional safety. Our staff are trained in both child development and empathy-focused care.",
+      features: [
+        "Highly qualified staff with extensive experience",
+        "Low teacher-to-child ratios for personalized attention",
+        "Continuous professional development and training",
+        "Strong emphasis on emotional intelligence",
+        "Warm, nurturing environment for every child"
+      ],
+      testimonial: {
+        quote: "The teachers at Shining Stars are amazing! They truly care about each child's development and well-being.",
+        author: "Sarah M., Parent"
+      },
       image: "/loving-caregivers.png"
     },
     {
@@ -19,6 +30,17 @@ export default function HighlightsSection() {
       text: "From story circles to outdoor adventures, our environment is built to spark joy and imagination.",
       bg: "bg-[#A7F3D0]",
       description: "Our classrooms and play areas are designed with both fun and learning in mind. Whether it's indoor creativity or outdoor exploration, there's always something new to discover.",
+      features: [
+        "Age-appropriate learning centers",
+        "Safe, engaging outdoor play areas",
+        "Dedicated spaces for arts and crafts",
+        "Comfortable reading nooks",
+        "Regularly updated play equipment"
+      ],
+      testimonial: {
+        quote: "My daughter loves the creative spaces! She's always excited to show me her new art projects.",
+        author: "Michael T., Parent"
+      },
       image: "/play-place.png"
     },
     {
@@ -26,6 +48,17 @@ export default function HighlightsSection() {
       text: "We provide balanced, child-friendly meals that support both energy and growth throughout the day.",
       bg: "bg-[#BFDBFE]",
       description: "Meal planning at Shining Stars follows USDA nutrition guidelines. We offer allergy-safe options and seasonal menus full of fruits, veggies, and child favorites.",
+      features: [
+        "USDA-compliant meal planning",
+        "Fresh, seasonal ingredients",
+        "Accommodation for dietary restrictions",
+        "Family-style dining experience",
+        "Regular nutrition education"
+      ],
+      testimonial: {
+        quote: "I appreciate how they accommodate my child's food allergies while still providing nutritious meals.",
+        author: "Lisa K., Parent"
+      },
       image: "/nutrition.png"
     },
     {
@@ -33,6 +66,17 @@ export default function HighlightsSection() {
       text: "We meet with every family to understand your needs and tailor the experience from day one.",
       bg: "bg-[#FCD5CE]",
       description: "Each family's journey is unique. That's why we begin with a one-on-one enrollment meeting and tour to understand how we can best support your child.",
+      features: [
+        "Comprehensive enrollment process",
+        "Flexible scheduling options",
+        "Individualized transition plans",
+        "Regular progress updates",
+        "Open-door policy for parents"
+      ],
+      testimonial: {
+        quote: "The enrollment process was smooth and personalized. They really took the time to understand our needs.",
+        author: "David R., Parent"
+      },
       image: "/enrollment.png"
     },
     {
@@ -40,6 +84,17 @@ export default function HighlightsSection() {
       text: "We introduce letters, numbers, and life skills through fun, hands-on activities rooted in early education best practices.",
       bg: "bg-[#DDD6FE]",
       description: "Our curriculum prepares children for Kindergarten and beyond, blending academic readiness with emotional intelligence and creativity.",
+      features: [
+        "Developmentally appropriate curriculum",
+        "Hands-on learning experiences",
+        "Focus on critical thinking",
+        "Regular progress tracking",
+        "Kindergarten preparation"
+      ],
+      testimonial: {
+        quote: "My son has learned so much! He's more than ready for kindergarten thanks to their program.",
+        author: "Jennifer L., Parent"
+      },
       image: "/early-learning.png"
     },
     {
@@ -47,6 +102,17 @@ export default function HighlightsSection() {
       text: "Parents receive regular updates, photos, and open communication to stay connected and involved every step of the way.",
       bg: "bg-[#BBF7D0]",
       description: "We believe in transparency and connection. You'll receive updates throughout the week — from playtime pics to learning milestones!",
+      features: [
+        "Daily communication through parent portal",
+        "Regular newsletters and updates",
+        "Monthly parent-teacher meetings",
+        "Family events and activities",
+        "Digital photo sharing"
+      ],
+      testimonial: {
+        quote: "I love getting daily updates and photos! It makes me feel connected to my child's day.",
+        author: "Emma S., Parent"
+      },
       extra: "We regularly host parent-teacher chats to share insights about your child's day and progress.",
       cta: {
         label: "Parent Portal",
