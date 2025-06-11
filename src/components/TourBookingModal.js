@@ -32,13 +32,13 @@ export default function TourBookingModal({ isOpen, onClose }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6 overflow-y-auto"
         >
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 50, opacity: 0 }}
-            className="bg-white w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl overflow-hidden relative flex flex-col"
+            className="bg-white w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden relative flex flex-col my-8"
           >
             {/* Header */}
             <div className="p-6 border-b border-gray-200 flex-shrink-0">
@@ -58,7 +58,7 @@ export default function TourBookingModal({ isOpen, onClose }) {
             </div>
 
             {/* Calendly Container */}
-            <div className="flex-1 min-h-0 relative">
+            <div className="flex-1 min-h-0 relative max-h-[60vh] md:max-h-[70vh] overflow-y-auto">
               {!isCalendlyLoaded && (
                 <div className="absolute inset-0 flex items-center justify-center bg-white">
                   <div className="text-center">

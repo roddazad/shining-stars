@@ -17,13 +17,13 @@ export default function Modal({ isOpen, onClose, content }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6 overflow-y-auto"
         >
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 50, opacity: 0 }}
-            className="bg-white w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl overflow-hidden relative flex flex-col md:flex-row"
+            className="bg-white w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden relative flex flex-col md:flex-row my-8"
           >
             {/* Left Column - Image and Quick Info */}
             <div className="w-full md:w-1/2 relative flex-shrink-0">
@@ -39,7 +39,7 @@ export default function Modal({ isOpen, onClose, content }) {
             </div>
 
             {/* Right Column - Content */}
-            <div className="w-full md:w-1/2 flex flex-col h-[90vh] md:h-auto">
+            <div className="w-full md:w-1/2 flex flex-col">
               {/* Header */}
               <div className="p-6 border-b border-gray-100 flex-shrink-0">
                 <div className="flex justify-between items-start">
@@ -57,7 +57,7 @@ export default function Modal({ isOpen, onClose, content }) {
               </div>
 
               {/* Main Content - Make this section scrollable */}
-              <div className="flex-1 overflow-y-auto p-6 space-y-6">
+              <div className="flex-1 overflow-y-auto p-6 space-y-6 max-h-[60vh] md:max-h-[70vh]">
                 {/* Description */}
                 <div className="space-y-4">
                   <p className="text-gray-700 leading-relaxed">{content.description}</p>
