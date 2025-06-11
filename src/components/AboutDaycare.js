@@ -73,7 +73,7 @@ const features = [
     title: 'Family Communication',
     description: 'Parents receive regular updates, photos, and open communication to stay connected and involved every step of the way.',
     details: [
-      'Daily communication through our parent portal',
+      'Daily communication through phone calls and emails',
       'Regular newsletters and program updates',
       'Monthly parent-teacher meetings',
       'Family events and community building activities',
@@ -169,7 +169,7 @@ const AboutDaycare = () => {
             ))}
           </div>
 
-          {/* Handbook Section */}
+          {/* Daily Activities & Enrollment Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -177,21 +177,70 @@ const AboutDaycare = () => {
             viewport={{ once: true }}
             className="mt-16 text-center bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl font-heading text-green-700 mb-4">Our Parent Handbook</h2>
+            <h2 className="text-3xl font-heading text-green-700 mb-4">Daily Activities & Enrollment</h2>
             <p className="text-[#2b2b2b] text-lg mb-6">
-              Download our comprehensive parent handbook to learn more about our policies, procedures, and daily routines.
+              Our days are filled with engaging activities that promote learning and growth. From creative arts to outdoor play, we ensure every child has a balanced and enriching experience.
             </p>
-            <a
-              href="/handbook.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition"
-            >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              View Handbook
-            </a>
+            <div className="grid md:grid-cols-2 gap-8 mt-8">
+              <div className="bg-[#FDE68A] p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-[#2b2b2b] mb-4">Daily Schedule</h3>
+                <ul className="text-left space-y-3">
+                  <li className="flex items-start space-x-2">
+                    <svg className="w-6 h-6 text-green-700 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Morning circle time and learning activities</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <svg className="w-6 h-6 text-green-700 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Creative arts and crafts sessions</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <svg className="w-6 h-6 text-green-700 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Outdoor play and physical activities</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <svg className="w-6 h-6 text-green-700 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Story time and language development</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-[#A7F3D0] p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-[#2b2b2b] mb-4">Enrollment Process</h3>
+                <ul className="text-left space-y-3">
+                  <li className="flex items-start space-x-2">
+                    <svg className="w-6 h-6 text-green-700 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Schedule a tour of our facility</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <svg className="w-6 h-6 text-green-700 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Meet with our director</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <svg className="w-6 h-6 text-green-700 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Complete enrollment forms</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <svg className="w-6 h-6 text-green-700 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Begin your child's journey with us</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </motion.div>
 
           {/* Call to Action */}
