@@ -170,7 +170,7 @@ const AboutUs = () => {
                   </svg>
                   <div>
                     <h3 className="font-semibold text-[#2b2b2b]">Address</h3>
-                    <p className="text-gray-600">19815 Scriber Lake Road<br />Lynwood, WA 98036</p>
+                    <p className="text-gray-600">13402 Seattle Hill Road<br />Mill Creek, WA 98012</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -190,7 +190,7 @@ const AboutUs = () => {
                   </svg>
                   <div>
                     <h3 className="font-semibold text-[#2b2b2b]">Email</h3>
-                    <p className="text-gray-600">Roshanak87.davoodi@gmail.com</p>
+                    <p className="text-gray-600">roshanak87.davoodi@gmail.com</p>
                   </div>
                 </div>
               </div>

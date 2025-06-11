@@ -5,6 +5,7 @@ import HighlightsSection from "../components/HighlightsSection"
 import WhatWeDo from '../components/WhatWeDo';
 import Testimonials from "../components/Testimonials"
 import GetStartedSection from "@/components/GetStartedSection";
+import ContactReference from "@/components/ContactReference";
 
 export default function Home() {
   return (
@@ -12,9 +13,9 @@ export default function Home() {
       <Hero />
       <HighlightsSection />
       <WhatWeDo />
-     
       <GetStartedSection />
       <Testimonials />
+      <ContactReference />
     </>
   );
 }

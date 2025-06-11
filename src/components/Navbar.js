@@ -56,7 +56,7 @@ export default function Navbar() {
               </button>
               <Link
                 href="/contact"
-                className="text-base bg-gray-100 text-[#2b2b2b] px-6 py-2.5 rounded-full hover:bg-gray-200 transition font-semibold"
+                className="text-base bg-pink-600 text-white px-6 py-2.5 rounded-full hover:bg-pink-700 transition font-semibold"
               >
                 Contact Us
               </Link>

@@ -44,8 +44,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900">Address</h3>
                     <p className="text-gray-600">
-                      123 Daycare Street<br />
-                      San Francisco, CA 94107
+                      13402 Seattle Hill Road<br />
+                      Mill Creek, WA 98012
                     </p>
                   </div>
                 </div>
@@ -119,8 +119,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Phone</h3>
-                    <a href="tel:+1234567890" className="text-green-600 hover:text-green-700">
-                      (123) 456-7890
+                    <a href="tel:+14256253236" className="text-green-600 hover:text-green-700">
+                      (425) 625-3236
                     </a>
                   </div>
                 </div>

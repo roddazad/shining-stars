@@ -61,7 +61,7 @@ export default function Hero() {
               </button>
               <Link
                 href="/enrollment"
-                className="bg-white text-green-700 border border-green-500 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition"
+                className="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition"
               >
                 Get Started
               </Link>
