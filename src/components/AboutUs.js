@@ -43,7 +43,7 @@ const AboutUs = () => {
                   <img
                     src="/about/profile.png"
                     alt="Roshanak Davoodi - Founder of Shining Stars Daycare"
-                    className="w-full h-full object-cover rounded-lg shadow-md"
+                    className="w-full h-full object-cover object-bottom rounded-lg shadow-md"
                   />
                 </div>
                 

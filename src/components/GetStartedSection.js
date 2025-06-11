@@ -12,21 +12,15 @@ export default function GetStartedSection() {
     <>
       <section className="bg-[#fffaf4] py-20 px-6 md:px-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-          {/* Left Image or Handbook Placeholder */}
+          {/* Left Image */}
           <div className="relative w-full md:w-1/2">
-            <div 
-        //   className="absolute -top-10 -left-10 w-72 h-72 bg-pink-200 rounded-full z-0"
-           />
-           
-   <Link href="/handbook.pdf" target="_blank" rel="noopener noreferrer">
-  <Image
-    src="/Handbook.png"
-    alt="Parent Handbook Preview"
-    width={500}
-    height={500}
-    className="relative z-10 rounded-xl shadow-md object-cover w-full"
-  />
-</Link>
+            <Image
+              src="/about-daycare/hero.png"
+              alt="Our Daycare Environment"
+              width={500}
+              height={500}
+              className="relative z-10 rounded-xl shadow-md object-cover w-full"
+            />
           </div>
 
           {/* Right Content */}
@@ -38,17 +32,16 @@ export default function GetStartedSection() {
               Explore our warm, nurturing environment, meet our team, and discover how Shining Stars supports every child's journey.
             </p>
             <p>
-              Download our Parent Handbook or schedule a visit — we'd love to meet you!
+              Schedule a visit or start your enrollment process — we'd love to meet you!
             </p>
 
             <div className="flex flex-wrap gap-4 mt-4">
-              <a
-                href="/handbook.pdf"
+              <Link
+                href="/enrollment"
                 className="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition"
-                download
               >
-                Download Handbook
-              </a>
+                Start Enrollment
+              </Link>
               <button
                 onClick={() => setIsTourModalOpen(true)}
                 className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
