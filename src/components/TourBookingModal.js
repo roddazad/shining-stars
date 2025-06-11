@@ -58,7 +58,7 @@ export default function TourBookingModal({ isOpen, onClose }) {
             </div>
 
             {/* Calendly Container */}
-            <div className="flex-1 min-h-0 relative max-h-[60vh] md:max-h-[70vh] overflow-y-auto">
+            <div className="flex-1 relative" style={{ height: '70vh' }}>
               {!isCalendlyLoaded && (
                 <div className="absolute inset-0 flex items-center justify-center bg-white">
                   <div className="text-center">
@@ -67,7 +67,7 @@ export default function TourBookingModal({ isOpen, onClose }) {
                   </div>
                 </div>
               )}
-              <div className="calendly-container h-full" />
+              <div className="calendly-container h-full" style={{ minHeight: '500px' }} />
             </div>
 
             {/* Footer */}
