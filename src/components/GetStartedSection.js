@@ -56,6 +56,10 @@ export default function GetStartedSection() {
                 Book a Tour
               </button>
             </div>
+
+            <p className="text-lg font-medium mt-16 text-center">
+              Don't know where to start from? <Link href="/contact" className="text-green-600 hover:text-green-700 underline">Contact us</Link> and we'll guide you through the process.
+            </p>
           </div>
         </div>
       </section>

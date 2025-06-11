@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import TourBookingModal from './TourBookingModal';
+import Link from 'next/link';
 
 export default function Modal({ isOpen, onClose, content }) {
   const [isTourModalOpen, setIsTourModalOpen] = useState(false);
@@ -96,12 +97,18 @@ export default function Modal({ isOpen, onClose, content }) {
               {/* Footer - Action Buttons */}
               <div className="p-6 border-t border-gray-100 bg-gray-50 flex-shrink-0">
                 <div className="flex flex-wrap gap-3">
-                  <button
-                    onClick={() => setIsTourModalOpen(true)}
+                  <Link
+                    href="/enrollment"
                     className="flex-1 bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition text-center"
                   >
-                    Book a Tour
-                  </button>
+                    Get Started
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="flex-1 bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-gray-50 transition text-center"
+                  >
+                    Contact Us
+                  </Link>
                   {content.cta && (
                     <a
                       href={content.cta.link}
