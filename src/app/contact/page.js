@@ -1,12 +1,9 @@
 'use client';
 
 import ContactForm from '@/components/ContactForm';
-import TourBookingModal from '@/components/TourBookingModal';
-import { useState } from 'react';
+import Link from 'next/link';
 
 export default function ContactPage() {
-  const [isTourModalOpen, setIsTourModalOpen] = useState(false);
-
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50 to-white pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,12 +16,12 @@ export default function ContactPage() {
             Have questions about our programs or want to learn more? We're here to help!
             Reach out to us through any of the following ways.
           </p>
-          <button
-            onClick={() => setIsTourModalOpen(true)}
+          <Link
+            href="/enrollment"
             className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
           >
             Schedule a Tour
-          </button>
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -82,12 +79,12 @@ export default function ContactPage() {
                     <p className="text-gray-600 mb-4">
                       Schedule a 30-minute tour to see our facilities, meet our staff, and learn more about our programs.
                     </p>
-                    <button
-                      onClick={() => setIsTourModalOpen(true)}
+                    <Link
+                      href="/enrollment"
                       className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
                     >
                       Book a Tour
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -148,12 +145,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-
-      {/* Tour Booking Modal */}
-      <TourBookingModal
-        isOpen={isTourModalOpen}
-        onClose={() => setIsTourModalOpen(false)}
-      />
     </main>
   );
 }

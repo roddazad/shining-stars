@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import TourBookingModal from "./TourBookingModal";
 
 export default function Hero() {
   const [isTourModalOpen, setIsTourModalOpen] = useState(false);
@@ -53,12 +52,12 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4"
             >
-              <button
-                onClick={() => setIsTourModalOpen(true)}
+              <Link
+                href="/enrollment"
                 className="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition"
               >
                 Book a Tour
-              </button>
+              </Link>
               <Link
                 href="/enrollment"
                 className="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-pink-700 transition"
@@ -128,12 +127,6 @@ export default function Hero() {
           </motion.div>
         </div>
       </section>
-
-      {/* Tour Booking Modal */}
-      <TourBookingModal
-        isOpen={isTourModalOpen}
-        onClose={() => setIsTourModalOpen(false)}
-      />
     </>
   );
 }

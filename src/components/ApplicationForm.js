@@ -11,6 +11,8 @@ export default function ApplicationForm({ isOpen, onClose }) {
     childName: '',
     childAge: '',
     preferredStartDate: '',
+    tourDate: '',
+    tourTime: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -51,6 +53,8 @@ export default function ApplicationForm({ isOpen, onClose }) {
           childName: '',
           childAge: '',
           preferredStartDate: '',
+          tourDate: '',
+          tourTime: '',
           message: ''
         });
       } else {
@@ -160,6 +164,36 @@ export default function ApplicationForm({ isOpen, onClose }) {
                     onChange={handleChange}
                     className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Tour Date *</label>
+                  <input
+                    type="date"
+                    name="tourDate"
+                    required
+                    value={formData.tourDate}
+                    onChange={handleChange}
+                    min={new Date().toISOString().split('T')[0]}
+                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Tour Time *</label>
+                  <select
+                    name="tourTime"
+                    required
+                    value={formData.tourTime}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  >
+                    <option value="">Select a time</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                  </select>
                 </div>
               </div>
               

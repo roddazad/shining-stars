@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import TourBookingModal from './TourBookingModal';
+import ApplicationForm from './ApplicationForm';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isTourModalOpen, setIsTourModalOpen] = useState(false);
+  const [isApplicationFormOpen, setIsApplicationFormOpen] = useState(false);
 
   const navLinks = [
     { name: 'Our Daycare', href: '/about-daycare' },
@@ -43,14 +43,14 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-base font-medium text-[#2b2b2b] hover:text-green-700 transition"
+                  className="text-gray-700 hover:text-green-600 transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
               <button
-                onClick={() => setIsTourModalOpen(true)}
-                className="text-base bg-green-600 text-white px-6 py-2.5 rounded-full hover:bg-green-700 transition font-semibold"
+                onClick={() => setIsApplicationFormOpen(true)}
+                className="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition"
               >
                 Book a Tour
               </button>
@@ -82,7 +82,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="block text-[#2b2b2b] hover:text-green-700 font-medium"
+                className="block py-2 text-gray-700 hover:text-green-600 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
@@ -90,10 +90,10 @@ export default function Navbar() {
             ))}
             <button
               onClick={() => {
+                setIsApplicationFormOpen(true);
                 setIsOpen(false);
-                setIsTourModalOpen(true);
               }}
-              className="block w-full text-left text-green-700 font-semibold"
+              className="block w-full text-left py-2 text-green-600 font-semibold hover:text-green-700 transition-colors"
             >
               Book a Tour
             </button>
@@ -108,10 +108,10 @@ export default function Navbar() {
         )}
       </nav>
 
-      {/* Tour Booking Modal */}
-      <TourBookingModal
-        isOpen={isTourModalOpen}
-        onClose={() => setIsTourModalOpen(false)}
+      {/* Application Form Modal */}
+      <ApplicationForm
+        isOpen={isApplicationFormOpen}
+        onClose={() => setIsApplicationFormOpen(false)}
       />
     </>
   );

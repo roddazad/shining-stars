@@ -111,76 +111,71 @@ export default function HighlightsSection() {
     }
   ];
 
-  return (
-    <section className="py-20 px-6 md:px-16 bg-gradient-to-b from-[#fffaf4] to-white">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-heading text-green-700 mb-6">
-            Why Families Love Us
-          </h2>
-          <p className="text-lg text-[#4b4b4b] max-w-2xl mx-auto">
-            Discover what makes Shining Stars the perfect place for your child's growth and development
-          </p>
-        </motion.div>
+  const highlights = [
+    {
+      title: 'Nurturing Environment',
+      description: 'Our daycare provides a warm, caring atmosphere where children feel safe and valued.',
+      icon: '🌟'
+    },
+    {
+      title: 'Experienced Staff',
+      description: 'Our team of qualified educators is dedicated to your child\'s growth and development.',
+      icon: '👩‍🏫'
+    },
+    {
+      title: 'Learning Through Play',
+      description: 'We combine fun activities with educational content to make learning enjoyable.',
+      icon: '🎨'
+    },
+    {
+      title: 'Safe & Secure',
+      description: 'Your child\'s safety is our top priority, with secure facilities and careful supervision.',
+      icon: '🔒'
+    }
+  ];
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((item, index) => (
+  return (
+    <section className="py-16 bg-gradient-to-b from-white to-green-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Why Choose Shining Stars?
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            We provide a nurturing environment where your child can grow, learn, and thrive.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {highlights.map((highlight, index) => (
             <motion.div
-              key={item.title}
+              key={highlight.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`${item.bg} p-8 rounded-2xl shadow-lg text-[#2b2b2b] flex flex-col justify-between transform hover:scale-105 transition-all duration-300`}
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div>
-                <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                <p className="text-base mb-6">{item.text}</p>
-              </div>
-              <button
-                onClick={() => setSelectedFeature(item)}
-                className="w-full bg-white text-green-700 font-semibold px-6 py-3 rounded-full hover:bg-green-50 transition flex items-center justify-center gap-2"
-              >
-                <span>Learn More</span>
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
+              <div className="text-4xl mb-4">{highlight.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {highlight.title}
+              </h3>
+              <p className="text-gray-600">
+                {highlight.description}
+              </p>
             </motion.div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
+        <div className="text-center mt-12">
           <Link
-            href="/about-daycare"
-            className="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 transition shadow-lg hover:shadow-xl"
+            href="/enrollment"
+            className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
           >
-            <span>Discover More About Our Daycare</span>
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+            Start Your Journey With Us
           </Link>
-        </motion.div>
+        </div>
       </div>
-
-      {/* Modal */}
-      <Modal
-        isOpen={!!selectedFeature}
-        onClose={() => setSelectedFeature(null)}
-        content={selectedFeature || {}}
-      />
     </section>
   );
 }

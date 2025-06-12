@@ -11,6 +11,8 @@ export async function POST(req) {
       childName,
       childAge,
       preferredStartDate,
+      tourDate,
+      tourTime,
       message,
       to,
       subject
@@ -38,6 +40,8 @@ export async function POST(req) {
         <p><strong>Child's Name:</strong> ${childName}</p>
         <p><strong>Child's Age:</strong> ${childAge}</p>
         <p><strong>Preferred Start Date:</strong> ${preferredStartDate}</p>
+        <p><strong>Tour Date:</strong> ${tourDate}</p>
+        <p><strong>Preferred Tour Time:</strong> ${tourTime}</p>
         ${message ? `<p><strong>Additional Information:</strong> ${message}</p>` : ''}
       `,
     };
