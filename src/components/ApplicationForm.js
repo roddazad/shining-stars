@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ApplicationForm({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
@@ -11,18 +11,16 @@ export default function ApplicationForm({ isOpen, onClose }) {
     childName: '',
     childAge: '',
     preferredStartDate: '',
-    tourDate: '',
-    tourTime: '',
-    message: ''
+    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -32,16 +30,12 @@ export default function ApplicationForm({ isOpen, onClose }) {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('https://formspree.io/f/mvgralav', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          ...formData,
-          to: 'Roshanak87.davoodi@gmail.com',
-          subject: 'New Enrollment Application',
-        }),
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -53,9 +47,7 @@ export default function ApplicationForm({ isOpen, onClose }) {
           childName: '',
           childAge: '',
           preferredStartDate: '',
-          tourDate: '',
-          tourTime: '',
-          message: ''
+          message: '',
         });
       } else {
         setSubmitStatus('error');
@@ -164,36 +156,6 @@ export default function ApplicationForm({ isOpen, onClose }) {
                     onChange={handleChange}
                     className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Tour Date *</label>
-                  <input
-                    type="date"
-                    name="tourDate"
-                    required
-                    value={formData.tourDate}
-                    onChange={handleChange}
-                    min={new Date().toISOString().split('T')[0]}
-                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Tour Time *</label>
-                  <select
-                    name="tourTime"
-                    required
-                    value={formData.tourTime}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  >
-                    <option value="">Select a time</option>
-                    <option value="9:00 AM">9:00 AM</option>
-                    <option value="10:00 AM">10:00 AM</option>
-                    <option value="11:00 AM">11:00 AM</option>
-                    <option value="2:00 PM">2:00 PM</option>
-                    <option value="3:00 PM">3:00 PM</option>
-                    <option value="4:00 PM">4:00 PM</option>
-                  </select>
                 </div>
               </div>
               

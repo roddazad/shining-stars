@@ -26,15 +26,14 @@ export default function ContactForm() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('https://formspree.io/f/mvgralav', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           ...formData,
-          to: 'Roshanak87.davoodi@gmail.com',
-          subject: `Contact Form: ${formData.subject}`,
+          _subject: `Contact Form: ${formData.subject}`,
         }),
       });
 

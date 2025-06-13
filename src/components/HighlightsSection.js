@@ -169,10 +169,10 @@ export default function HighlightsSection() {
 
         <div className="text-center mt-12">
           <Link
-            href="/enrollment"
+            href="/about-daycare"
             className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200"
           >
-            Start Your Journey With Us
+            Learn More About Our Daycare
           </Link>
         </div>
       </div>
