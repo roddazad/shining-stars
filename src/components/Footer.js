@@ -104,7 +104,7 @@ const Footer = () => {
             <div className="mt-6">
               <h4 className="text-lg font-semibold mb-2 text-green-700">Hours of Operation</h4>
               <p className="text-[#2b2b2b]">Monday - Friday: 7:00 AM - 6:00 PM</p>
-              <p className="text-[#2b2b2b]">Saturday: 8:00 AM - 2:00 PM</p>
+              <p className="text-[#2b2b2b]">Saturday: Closed</p>
               <p className="text-[#2b2b2b]">Sunday: Closed</p>
             </div>
           </div>
