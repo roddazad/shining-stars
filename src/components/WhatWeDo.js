@@ -36,7 +36,7 @@ export default function WhatWeDo() {
         <div className="w-full md:w-1/2 space-y-6 text-[#2b2b2b]">
           <h2 className="text-4xl font-heading text-pink-600">Our Philosophy</h2>
           <p>
-            At Shining Stars Daycare, we provide personalized care and education in a safe and engaging environment, nurturing each child's growth.
+            At Shiny Stars Daycare, we provide personalized care and education in a safe and engaging environment, nurturing each child's growth.
           </p>
           <p>
             Our approach blends structured learning with creative play, tailored to enhance cognitive, social, and emotional development.

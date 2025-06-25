@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "Emily T.",
     quote:
-      "I toured a few daycares before finding Shining Stars — nothing compares. The warmth here is real.",
+      "I toured a few daycares before finding Shiny Stars — nothing compares. The warmth here is real.",
     image: "/emily.png",
   },
 ];
@@ -30,7 +30,7 @@ export default function TestimonialSection() {
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-heading text-green-700">What Parents Say</h2>
         <p className="text-[#4b4b4b] mt-4 max-w-2xl mx-auto">
-          Real stories from real families who trust and love Shining Stars.
+          Real stories from real families who trust and love Shiny Stars.
         </p>
       </div>
 

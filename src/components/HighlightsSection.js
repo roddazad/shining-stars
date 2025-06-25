@@ -11,7 +11,7 @@ export default function HighlightsSection() {
       title: "Loving Caregivers",
       text: "Our teachers aren't just certified — they're passionate, nurturing, and treat every child like their own.",
       bg: "bg-[#FDE68A]",
-      description: "At Shining Stars, we believe that every child deserves warmth, consistency, and emotional safety. Our staff are trained in both child development and empathy-focused care.",
+      description: "At Shiny Stars, we believe that every child deserves warmth, consistency, and emotional safety. Our staff are trained in both child development and empathy-focused care.",
       features: [
         "Certified and experienced teachers",
         "Low teacher-to-child ratios",
@@ -19,7 +19,7 @@ export default function HighlightsSection() {
         "Warm and nurturing environment"
       ],
       testimonial: {
-        quote: "The teachers at Shining Stars are amazing! They truly care about each child's development and happiness.",
+        quote: "The teachers at Shiny Stars are amazing! They truly care about each child's development and happiness.",
         author: "Sarah M., Parent"
       },
       image: "/loving-caregivers.png"
@@ -139,7 +139,7 @@ export default function HighlightsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Choose Shining Stars?
+            Why Choose Shiny Stars?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We provide a nurturing environment where your child can grow, learn, and thrive.

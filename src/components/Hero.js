@@ -35,7 +35,7 @@ export default function Hero() {
             className="text-center md:text-left max-w-xl"
           >
             <h1 className="text-4xl md:text-5xl font-heading text-green-700 mb-4">
-              Welcome to Shining Stars Daycare✨
+              Welcome to Shiny Stars Daycare✨
             </h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}

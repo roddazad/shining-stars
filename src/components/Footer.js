@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold mb-4 text-green-700 flex items-center">
-              Shining Stars Daycare
+              Shiny Stars Daycare
               <Star className="ml-2 text-yellow-400 w-5 h-5" />
             </h3>
             <p className="flex items-center space-x-2 text-[#2b2b2b]">
@@ -113,7 +113,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-green-200 text-center">
           <p className="text-sm text-[#2b2b2b]">
-            © {new Date().getFullYear()} Shining Stars Daycare. All rights reserved.
+            © {new Date().getFullYear()} Shiny Stars Daycare. All rights reserved.
           </p>
           <p className="text-sm mt-2 text-[#2b2b2b]">
             Designed with <span className="text-pink-500">Love</span> for your little stars by <a href="https://code-nest.dev" className="text-green-600 hover:text-green-700 transition-colors">CodeNest</a>

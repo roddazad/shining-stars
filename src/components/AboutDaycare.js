@@ -120,7 +120,7 @@ const AboutDaycare = () => {
             <h2 className="text-3xl font-heading text-green-700 mb-6">Welcome to Our World</h2>
             <div className="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
               <p className="text-[#2b2b2b] text-lg leading-relaxed mb-6">
-                At Shining Stars Daycare, we believe that every child deserves a nurturing environment where they can grow, learn, and shine. Our facility is designed to be a second home for your little ones, where they can explore, create, and develop in a safe and stimulating setting.
+                At Shiny Stars Daycare, we believe that every child deserves a nurturing environment where they can grow, learn, and shine. Our facility is designed to be a second home for your little ones, where they can explore, create, and develop in a safe and stimulating setting.
               </p>
               <p className="text-[#2b2b2b] text-lg leading-relaxed">
                 With a perfect blend of structured learning and creative play, we provide a comprehensive early childhood education program that prepares children for kindergarten and beyond, while ensuring they have fun every step of the way.

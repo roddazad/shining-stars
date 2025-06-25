@@ -24,7 +24,7 @@ export default function GetStartedSection() {
             Let's Get Started Together
           </h2>
           <p>
-            Explore our warm, nurturing environment, meet our team, and discover how Shining Stars supports every child's journey.
+            Explore our warm, nurturing environment, meet our team, and discover how Shiny Stars supports every child's journey.
           </p>
           <p>
             Schedule a visit or start your enrollment process — we'd love to meet you!

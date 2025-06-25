@@ -29,7 +29,7 @@ export default function Navbar() {
               />
               <div className="flex flex-col leading-tight ml-3">
                 <span className="text-2xl font-heading text-green-700 tracking-wide">
-                  SHINING STARS
+                  SHINY STARS
                 </span>
                 <span className="text-sm text-[#2b2b2b] font-medium tracking-wide">
                   ✨DAYCARE✨

@@ -9,13 +9,13 @@ const AboutUs = () => {
       <div className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
         <img
           src="/about/hero.png"
-          alt="About Shining Stars Daycare"
+          alt="About Shiny Stars Daycare"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-              About Shining Stars
+              About Shiny Stars
             </h1>
             <p className="text-lg md:text-xl max-w-2xl mx-auto px-4">
               Where Every Child's Potential Shines Bright
@@ -42,7 +42,7 @@ const AboutUs = () => {
                 <div className="relative aspect-square max-w-sm mx-auto md:mx-0">
                   <img
                     src="/about/profile.png"
-                    alt="Roshanak Davoodi - Founder of Shining Stars Daycare"
+                    alt="Roshanak Davoodi - Founder of Shiny Stars Daycare"
                     className="w-full h-full object-cover object-bottom rounded-lg shadow-md"
                   />
                 </div>
@@ -50,7 +50,7 @@ const AboutUs = () => {
                 {/* Founder's Bio */}
                 <div>
                   <p className="text-[#2b2b2b] text-lg leading-relaxed mb-6">
-                    With over 25 years of dedicated experience in education and childcare, Roshanak Davoodi brings a wealth of knowledge and passion to Shining Stars Daycare. Her journey began with a Bachelor's degree in Chemistry, which laid the foundation for her analytical and methodical approach to education.
+                    With over 25 years of dedicated experience in education and childcare, Roshanak Davoodi brings a wealth of knowledge and passion to Shiny Stars Daycare. Her journey began with a Bachelor's degree in Chemistry, which laid the foundation for her analytical and methodical approach to education.
                   </p>
                   <p className="text-[#2b2b2b] text-lg leading-relaxed">
                     Her extensive experience working with students with disabilities has equipped her with unique insights into child development and personalized learning approaches, making her exceptionally qualified to nurture and guide young minds.
@@ -73,7 +73,7 @@ const AboutUs = () => {
               {/* Current Role */}
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h3 className="text-xl font-semibold text-green-700 mb-2">Founder & Director</h3>
-                <p className="text-gray-600 mb-4">Shining Stars Daycare • 2022 - Present</p>
+                <p className="text-gray-600 mb-4">Shiny Stars Daycare • 2022 - Present</p>
                 <ul className="list-disc list-inside text-[#2b2b2b] space-y-2">
                   <li>Creating a nurturing and stimulating environment for young learners</li>
                   <li>Developing comprehensive early childhood education programs</li>
