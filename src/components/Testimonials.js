@@ -7,19 +7,19 @@ const testimonials = [
   {
     name: "Alicia R.",
     quote:
-      "My daughter comes home every day smiling and excited to tell me what she learned. The teachers are truly amazing!",
+      "Roshanak's dedication to each child is incredible. My daughter comes home every day smiling and excited to tell me what she learned from Roshanak.",
     image: "/alicia-r.png",
   },
   {
     name: "Jamal K.",
     quote:
-      "The staff is so patient and thoughtful. I always feel my son is safe and supported.",
+      "Roshanak's patience and understanding with my son has been amazing. I always feel he's safe and supported under her care.",
     image: "/jamal-k.png",
   },
   {
     name: "Emily T.",
     quote:
-      "I toured a few daycares before finding Shiny Stars — nothing compares. The warmth here is real.",
+      "Meeting Roshanak changed everything for us. Her warmth and genuine care for children is what makes this place special.",
     image: "/emily.png",
   },
 ];
